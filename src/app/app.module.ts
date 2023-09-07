@@ -7,6 +7,7 @@ import { CatsComponent } from './cats/cats.component';
 import { CatDetailComponent } from './cat-detail/cat-detail.component';
 import { BreedsComponent } from './breeds/breeds.component';
 import { BreedDetailComponent } from './breed-detail/breed-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BreedDetailComponent } from './breed-detail/breed-detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
