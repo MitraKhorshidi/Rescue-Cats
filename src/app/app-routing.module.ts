@@ -6,6 +6,7 @@ import { DonateComponent } from './donate/donate.component';
 import { CatsComponent } from './cats/cats.component';
 import { BreedsComponent } from './breeds/breeds.component';
 import { BreedDetailComponent } from './breed-detail/breed-detail.component';
+import { AdoptComponent } from './adopt/adopt.component';
 
 const routes: Routes = [
   {path:'' , component:HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'cats' , component:CatsComponent},
   {path:'breeds' , component:BreedsComponent},
   {path:'breeds/:breedId' , component:BreedDetailComponent},
+  {path:'adopt' , component:AdoptComponent},
 ];
 
 @NgModule({

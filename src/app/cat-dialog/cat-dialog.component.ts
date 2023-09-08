@@ -19,6 +19,6 @@ export class CatDialogComponent {
   }
 
   onClick(){
-    // this.router.navigate(['adopt']);
+    this.router.navigate(['adopt']);
   }
 }
