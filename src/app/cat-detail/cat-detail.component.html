@@ -1,4 +1,5 @@
-<div [style.backgroundImage]="'linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url('+cat.img+')'" 
+<div (click)="openDialog()"
+    [style.backgroundImage]="'linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url('+cat.img+')'" 
     class="relative w-72 h-72 bg-cover rounded-md shadow-xl">
-    <h3 class="absolute bottom-5 left-5 text-2xl text-white font-semibold ">{{cat.name}}</h3>
+    <h3><span class="absolute bottom-5 left-5 text-2xl tracking-wide text-white font-semibold ">{{cat.name}}</span></h3>
 </div>

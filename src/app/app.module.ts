@@ -14,6 +14,10 @@ import { AboutComponent } from './about/about.component';
 import { DonateComponent } from './donate/donate.component';
 import { BreedCardComponent } from './breed-card/breed-card.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CatDialogComponent } from './cat-dialog/cat-dialog.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -27,14 +31,19 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     DonateComponent,
     BreedCardComponent,
-    HomeComponent
+    HomeComponent,
+    CatDialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule, MatButtonModule,
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
