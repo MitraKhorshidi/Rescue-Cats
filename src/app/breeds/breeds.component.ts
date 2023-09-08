@@ -10,14 +10,17 @@ import { BreedsService } from '../services/api/breeds/breeds.service';
 export class BreedsComponent implements OnInit {
 
   breedsList: Breed[] = [];
-  constructor(private breedsService: BreedsService) { }
+
+  constructor(
+    private breedsService: BreedsService,
+  ) { }
 
   ngOnInit(): void {
     this.breedsService.getAllBreeds().subscribe({
       next: (result: Breed[]) => {
         console.log(result);
-        this.breedsList = result; 
-      } 
+        this.breedsList = result;
+      }
     });
   }
 }

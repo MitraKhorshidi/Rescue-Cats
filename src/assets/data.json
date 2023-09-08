@@ -1,0 +1,28 @@
+[
+    {"id":1 , "name":"Agatha" , "breed":"Bombay" , "age":"18 weeks" , "gender":"Female" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/agatha-head-0817a-600x600.jpg"},
+    {"id":2 , "name":"Akito" , "breed":"Bombay" , "age":"17 weeks" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/akito-head-0810b-600x600.jpg"},
+    {"id":3 , "name":"Angel" , "breed":"American Shorthair" , "age":"18 weeks" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/angel-head-0817a-600x600.jpg"},
+    {"id":4 , "name":"Antoinette" , "breed":"American Shorthair" , "age":"5 years" , "gender":"Female" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2020/01/antoinette-head-0320a-600x600.jpg"},
+    {"id":5 , "name":"Arnie" , "breed":"American Shorthair" , "age":"1 year" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/arnie-head-0831a-600x600.jpg"},
+    {"id":6 , "name":"Auburn" , "breed":"American Shorthair" , "age":"1 year" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2021/03/auburn-head-1-768x768.jpg"},
+    {"id":7 , "name":"Axil" , "breed":"American Shorthair" , "age":"6 years" , "gender":"Female" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2022/09/axil-head-0922a-600x600.jpg"},
+    {"id":8 , "name":"Barbie" , "breed":"American Shorthair" , "age":"20 weeks" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/barbie-head-0825a-600x600.jpg"},
+    {"id":9 , "name":"Bee Bee" , "breed":"American Shorthair" , "age":" 17 weeks" , "gender":"Female" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2019/08/beebee-head-0803a-600x600.jpg"},
+    {"id":10 , "name":"Benji" , "breed":"American Shorthair" , "age":"2 years" , "gender":"Female" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/07/benji-head-0714a-600x600.jpg"},
+    {"id":11 , "name":"Boots" , "breed":"American Shorthair" , "age":"5 months" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/boots-head-0831a-600x600.jpg"},
+    {"id":12 , "name":"Carly" , "breed":"American Shorthair" , "age":"4 years" , "gender":"Female" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/carly-head-0809a-600x600.jpg"},
+    {"id":13 , "name":"Nilla" , "breed":"Nebelung" , "age":"15 weeks" , "gender":"male" , "img":"https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/65697512/1/?bust=1690849317&width=1080"},
+    {"id":14 , "name":"Chloe" , "breed":"Havana Brown" , "age":"2 years" , "gender":"Female" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Havana_Brown_-_choco.jpg/330px-Havana_Brown_-_choco.jpg"},
+    {"id":15 , "name":"Celeste" , "breed":"Himalayan" , "age":"17 weeks" , "gender":"male" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Himalayan_CAT.jpg/330px-Himalayan_CAT.jpg"},
+    {"id":16 , "name":"Carrie Anne" , "breed":"Japanese Bobtail" , "age":"18 weeks" , "gender":"Female" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/JapaneseBobtailBlueEyedMi-ke.JPG/330px-JapaneseBobtailBlueEyedMi-ke.JPG"},
+    {"id":17 , "name":"Carmel" , "breed":"Himalayan" , "age":"2 yeras" , "gender":"Female" , "img":"https://upload.wikimedia.org/wikipedia/commons/e/ee/Himalayan_cat_percy.jpg"},
+    {"id":18 , "name":"Hazel" , "breed":"Japanese Bobtail" , "age":"5 years" , "gender":"male" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Japanese_bobtail_curled.jpg/330px-Japanese_bobtail_curled.jpg"},
+    {"id":19 , "name":"Ginger Snap" , "breed":"Bombay" , "age":"17 weeks" , "gender":"male" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Gata_com%C3%BAn_negra.png/330px-Gata_com%C3%BAn_negra.png"},
+    {"id":20 , "name":"Ginger" , "breed":"Bombay" , "age":"8 month" , "gender":"female" , "img":"https://www.thesprucepets.com/thmb/XdIshJz5OwY-AyxtezwKbfq72Lg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bombay-cat-full-profile-history-and-care-5202250-hero-85810f454cf84a7786e650136a10f91c.jpg"},
+    {"id":21 , "name":"Gigi" , "breed":"Abyssinian" , "age":"2 years" , "gender":"Female" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/330px-Gustav_chocolate.jpg"},
+    {"id":22 , "name":"Finnegan" , "breed":"American Shorthair" , "age":"1.7 years" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/08/spoons-head-0829a-600x600.jpg"},
+    {"id":23 , "name":"Finella" , "breed":"American Shorthair" , "age":"16 weeks" , "gender":"male" , "img":"https://www.animalhouseshelter.com/wp-content/uploads/2023/07/lullabye-head-0719a-600x600.jpg"},
+    {"id":24 , "name":"Fifi" , "breed":"Bombay" , "age":"3 years" , "gender":"Female" , "img":"https://www.purina.co.uk/sites/default/files/styles/ttt_image_690/public/2021-01/Bombay.2.webp?itok=CLRaH02y"},
+    {"id":25 , "name":"Eden" , "breed":"Abyssinian" , "age":"2 years" , "gender":"Female" , "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Valentino.jpg/375px-Valentino.jpg"}
+    
+]
