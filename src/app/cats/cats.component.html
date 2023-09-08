@@ -1,3 +1,5 @@
-<div class="flex flex-col justify-center gap-5">
-    <app-cat-detail *ngFor="let cat of catsList" [cat]="cat"></app-cat-detail>
+<div class="flex flex-col justify-center items-center gap-5">
+  <app-navbar></app-navbar>
+  <app-cat-detail *ngFor="let cat of catsList" [cat]="cat"></app-cat-detail>
+  <app-footer></app-footer>
 </div>
