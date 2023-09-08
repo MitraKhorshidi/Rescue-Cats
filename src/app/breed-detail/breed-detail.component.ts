@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Breed } from 'src/utils/models';
 
 @Component({
   selector: 'app-breed-detail',
@@ -8,5 +7,5 @@ import { Breed } from 'src/utils/models';
 })
 export class BreedDetailComponent {
 
-  @Input() breed: Breed = {};
+  
 }

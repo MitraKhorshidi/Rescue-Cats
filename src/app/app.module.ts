@@ -10,6 +10,10 @@ import { BreedDetailComponent } from './breed-detail/breed-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { DonateComponent } from './donate/donate.component';
+import { BreedCardComponent } from './breed-card/breed-card.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { FooterComponent } from './footer/footer.component';
     BreedsComponent,
     BreedDetailComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    DonateComponent,
+    BreedCardComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
