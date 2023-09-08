@@ -1,3 +1,12 @@
-<div>
-    <h2>{{breed.name}}</h2>
+<div (click)="onClick()" class="aspect-[1/1.5] w-72 rounded-md shadow-md">
+  <img
+    [src]="imageUrl"
+    class="w-full aspect-[1/1] h-72 bg-cover bg-center grayscale-[40%] rounded-tl-md rounded-tr-md shadow-xl"
+  />
+  <div class="p-5">
+    <h3 class="text-2xl tracking-wide font-semibold">
+      {{ breed.name }}
+    </h3>
+    <p>{{ breed.description }}</p>
+  </div>
 </div>

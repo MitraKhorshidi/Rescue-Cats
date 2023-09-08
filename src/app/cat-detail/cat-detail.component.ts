@@ -9,7 +9,7 @@ import { CatDialogComponent } from '../cat-dialog/cat-dialog.component';
   styleUrls: ['./cat-detail.component.css'],
 })
 export class CatDetailComponent {
-  @Input() cat: Cat = {};
+  @Input() cat: Cat = {} as any;
 
   constructor(public dialog: MatDialog) { }
 
