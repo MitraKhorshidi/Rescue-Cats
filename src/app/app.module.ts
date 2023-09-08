@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CatDialogComponent } from './cat-dialog/cat-dialog.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import { AdoptComponent } from './adopt/adopt.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {MatButtonModule} from '@angular/material/button';
     BreedCardComponent,
     HomeComponent,
     CatDialogComponent,
+    AdoptComponent,
   ],
   imports: [
     BrowserModule,
