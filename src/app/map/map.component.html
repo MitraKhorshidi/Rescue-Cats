@@ -1,0 +1,9 @@
+<google-map height="500px" width="100%" [center]="center" [zoom]="zoom" >
+  <map-marker
+    *ngFor="let cat of cats"
+    [position]="cat.location"
+    [options]="markerOptions"
+    [clickable]="true"
+    (mapClick)="markerClick(cat)"
+  ></map-marker>
+</google-map>

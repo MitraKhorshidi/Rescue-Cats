@@ -5,6 +5,12 @@ export interface Cat {
     age: string,
     gender: string,
     img: string,
+    location: GeoLocation,
+}
+
+export interface GeoLocation {
+    lng: number,
+    lat: number,
 }
 
 export interface Breed {

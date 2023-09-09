@@ -22,6 +22,7 @@ import { AdoptComponent } from './adopt/adopt.component';
 import { HomeAdoptionComponent } from './home-adoption/home-adoption.component';
 import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     AdoptComponent,
     HomeAdoptionComponent,
     HomeBreedsComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,

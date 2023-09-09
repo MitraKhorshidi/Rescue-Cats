@@ -21,4 +21,10 @@ export class CatsComponent implements OnInit{
     });
   }
 
+  catSelected(cat:Cat){
+    console.log('select');
+  }
+
+  
+
 }
