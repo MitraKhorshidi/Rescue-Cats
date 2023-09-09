@@ -5,6 +5,10 @@
         "breed": "Bombay",
         "age": "8 month",
         "gender": "female",
+        "location": {
+            "lng": 48.146212,
+            "lat": 11.559204
+        },
         "img": "https://www.zooplus.de/magazin/wp-content/uploads/2018/02/Bombay-Katze-Augen.jpg"
     },
     {
@@ -13,6 +17,10 @@
         "breed": "Abyssinian",
         "age": "2 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.137592,
+            "lat": 11.554269
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/330px-Gustav_chocolate.jpg"
     },
     {
@@ -21,6 +29,10 @@
         "breed": "American Shorthair",
         "age": "1.7 years",
         "gender": "male",
+        "location": {
+            "lng": 48.158115,
+            "lat": 11.522688
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/spoons-head-0829a-600x600.jpg"
     },
     {
@@ -29,6 +41,10 @@
         "breed": "American Shorthair",
         "age": "16 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.162103,
+            "lat": 11.441056
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/07/lullabye-head-0719a-600x600.jpg"
     },
     {
@@ -37,6 +53,10 @@
         "breed": "Bombay",
         "age": "3 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.193929,
+            "lat": 11.567715
+        },
         "img": "https://www.purina.co.uk/sites/default/files/styles/ttt_image_690/public/2021-01/Bombay.2.webp?itok=CLRaH02y"
     },
     {
@@ -45,6 +65,10 @@
         "breed": "Abyssinian",
         "age": "2 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.111253,
+            "lat": 11.683684
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Valentino.jpg/375px-Valentino.jpg"
     },
     {
@@ -53,6 +77,10 @@
         "breed": "Bombay",
         "age": "18 weeks",
         "gender": "Female",
+        "location": {
+            "lng": 48.130258,
+            "lat": 11.648935
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/agatha-head-0817a-600x600.jpg"
     },
     {
@@ -61,6 +89,10 @@
         "breed": "Bombay",
         "age": "17 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.152608,
+            "lat": 11.645167
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/akito-head-0810b-600x600.jpg"
     },
     {
@@ -69,6 +101,10 @@
         "breed": "American Shorthair",
         "age": "18 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.150094,
+            "lat": 11.629676
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/angel-head-0817a-600x600.jpg"
     },
     {
@@ -77,6 +113,10 @@
         "breed": "American Shorthair",
         "age": "5 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.161824,
+            "lat": 11.581949
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2020/01/antoinette-head-0320a-600x600.jpg"
     },
     {
@@ -85,6 +125,10 @@
         "breed": "American Shorthair",
         "age": "1 year",
         "gender": "male",
+        "location": {
+            "lng": 48.166742,
+            "lat": 11.576828
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/arnie-head-0831a-600x600.jpg"
     },
     {
@@ -93,6 +137,10 @@
         "breed": "American Shorthair",
         "age": "1 year",
         "gender": "male",
+        "location": {
+            "lng": 48.165376,
+            "lat": 11.541802
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2021/03/auburn-head-1-768x768.jpg"
     },
     {
@@ -101,6 +149,10 @@
         "breed": "American Shorthair",
         "age": "6 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.176441,
+            "lat": 11.482605
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2022/09/axil-head-0922a-600x600.jpg"
     },
     {
@@ -109,6 +161,10 @@
         "breed": "American Shorthair",
         "age": "20 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.158271,
+            "lat": 11.465194
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/barbie-head-0825a-600x600.jpg"
     },
     {
@@ -117,6 +173,10 @@
         "breed": "American Shorthair",
         "age": " 17 weeks",
         "gender": "Female",
+        "location": {
+            "lng": 48.139642,
+            "lat": 11.495133
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2019/08/beebee-head-0803a-600x600.jpg"
     },
     {
@@ -125,6 +185,10 @@
         "breed": "American Shorthair",
         "age": "2 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.120989,
+            "lat": 11.436266
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/07/benji-head-0714a-600x600.jpg"
     },
     {
@@ -133,6 +197,10 @@
         "breed": "American Shorthair",
         "age": "5 months",
         "gender": "male",
+        "location": {
+            "lng": 48.093723,
+            "lat": 11.514307
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/boots-head-0831a-600x600.jpg"
     },
     {
@@ -141,6 +209,10 @@
         "breed": "American Shorthair",
         "age": "4 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.092857,
+            "lat": 11.509790
+        },
         "img": "https://www.animalhouseshelter.com/wp-content/uploads/2023/08/carly-head-0809a-600x600.jpg"
     },
     {
@@ -149,6 +221,10 @@
         "breed": "Nebelung",
         "age": "15 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.101131,
+            "lat": 11.512779
+        },
         "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/65697512/1/?bust=1690849317&width=1080"
     },
     {
@@ -157,6 +233,10 @@
         "breed": "Havana Brown",
         "age": "2 years",
         "gender": "Female",
+        "location": {
+            "lng": 48.105938,
+            "lat": 11.483248
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Havana_Brown_-_choco.jpg/330px-Havana_Brown_-_choco.jpg"
     },
     {
@@ -165,6 +245,10 @@
         "breed": "Himalayan",
         "age": "17 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.113767,
+            "lat": 11.480538
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Himalayan_CAT.jpg/330px-Himalayan_CAT.jpg"
     },
     {
@@ -173,6 +257,10 @@
         "breed": "Japanese Bobtail",
         "age": "18 weeks",
         "gender": "Female",
+        "location": {
+            "lng": 48.140859,
+            "lat": 11.423927
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/JapaneseBobtailBlueEyedMi-ke.JPG/330px-JapaneseBobtailBlueEyedMi-ke.JPG"
     },
     {
@@ -181,6 +269,10 @@
         "breed": "Himalayan",
         "age": "2 yeras",
         "gender": "Female",
+        "location": {
+            "lng": 48.154879,
+            "lat": 11.419414
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Himalayan_cat_percy.jpg"
     },
     {
@@ -189,6 +281,10 @@
         "breed": "Japanese Bobtail",
         "age": "5 years",
         "gender": "male",
+        "location": {
+            "lng": 48.160549,
+            "lat": 11.466847
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Japanese_bobtail_curled.jpg/330px-Japanese_bobtail_curled.jpg"
     },
     {
@@ -197,6 +293,10 @@
         "breed": "Bombay",
         "age": "17 weeks",
         "gender": "male",
+        "location": {
+            "lng": 48.187490,
+            "lat": 11.450083
+        },
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Gata_com%C3%BAn_negra.png/330px-Gata_com%C3%BAn_negra.png"
     }
 ]
