@@ -8,20 +8,24 @@ import { Breed, BreedImageData } from 'src/utils/models';
 })
 export class BreedsService {
 
-  constructor(private httpClient : HttpClient){}
+  constructor(
+    private httpClient: HttpClient,
+  ) { }
 
-  baseUrl : string = 'https://api.thecatapi.com/v1/';
+  baseUrl: string = 'https://api.thecatapi.com/v1/';
 
-  getAllBreeds():Observable<Breed[]>{
-    const url :string = 'breeds';
+  getAllBreeds(): Observable<Breed[]> {
+    const url: string = 'breeds';
     return this.httpClient.get<Breed[]>(this.baseUrl.concat(url));
   }
-  getImage(breed:Breed):Observable<BreedImageData>{
-    const url :string = `images/${breed.reference_image_id}`
+
+  getImage(breed: Breed): Observable<BreedImageData> {
+    const url: string = `images/${breed.reference_image_id}`
     return this.httpClient.get<BreedImageData>(this.baseUrl.concat(url));
   }
-  getBreed(id:string):Observable<Breed>{
-    const url : string = `breeds/${id}`
+  
+  getBreed(id: string): Observable<Breed> {
+    const url: string = `breeds/${id}`
     return this.httpClient.get<Breed>(this.baseUrl.concat(url));
   }
 
