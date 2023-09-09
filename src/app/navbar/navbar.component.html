@@ -1,10 +1,10 @@
-<nav class="relative z-10 w-full bg-[#323e51] text-white text-xl py-2">
+<nav class="flex flex-row z-10 w-full h-20  bg-[#323e51] text-white text-xl">
   <img
     src="/assets/cat-logo.svg"
-    class="absolute -top-1 left-10 w-40 shadow-lg rounded-b-md"
+    class="ml-10 md:ml-16 w-40 h-40 shadow-lg rounded-b-md"
   />
   <div
-    class="invisible md:visible flex flex-row justify-end flex-wrap gap-x-8 md:pr-20"
+    class="hidden w-full md:flex justify-end items-center flex-wrap gap-x-8 md:pr-20 p-y-8"
   >
     <a routerLink="/">Home</a>
     <a routerLink="/cats">Adopt Cats</a>
@@ -12,7 +12,10 @@
     <a routerLink="/about">About us</a>
     <a routerLink="/donate">Donate</a>
   </div>
-  <button class="absolute top-0.5 right-2 p-4 visible md:invisible">
-    <img src="/assets/icons/menu.svg" class="w-20" />
-  </button>
+  <div class="md:hidden w-full flex justify-end ">
+    <button class="w-20 p-4 md:hidden">
+        <img src="/assets/icons/menu.svg" />
+      </button>
+  </div>
+  
 </nav>
