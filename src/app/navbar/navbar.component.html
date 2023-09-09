@@ -1,7 +1,18 @@
-<nav class=" w-full flex flex-row flex-wrap gap-5 text-xl">
+<nav class="relative z-10 w-full bg-[#323e51] text-white text-xl py-2">
+  <img
+    src="/assets/cat-logo.svg"
+    class="absolute -top-1 left-10 w-40 shadow-lg rounded-b-md"
+  />
+  <div
+    class="invisible md:visible flex flex-row justify-end flex-wrap gap-x-8 md:pr-20"
+  >
     <a routerLink="/">Home</a>
     <a routerLink="/cats">Adopt Cats</a>
     <a routerLink="/breeds">Breeds</a>
     <a routerLink="/about">About us</a>
     <a routerLink="/donate">Donate</a>
+  </div>
+  <button class="absolute top-0.5 right-2 p-4 visible md:invisible">
+    <img src="/assets/icons/menu.svg" class="w-20" />
+  </button>
 </nav>
