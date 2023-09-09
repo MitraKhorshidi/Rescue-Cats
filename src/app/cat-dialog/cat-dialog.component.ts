@@ -18,7 +18,10 @@ export class CatDialogComponent {
     this.cat = data.cat;
   }
 
+  mapClick(cat:Cat){}
+
   onClick(){
     this.router.navigate(['adopt']);
   }
+
 }

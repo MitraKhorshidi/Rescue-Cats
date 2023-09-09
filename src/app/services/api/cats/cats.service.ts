@@ -8,14 +8,16 @@ import { Cat } from 'src/utils/models';
 })
 export class CatsService {
 
-  catsList:Cat[] =[];
+  url:string='/assets/data.json';
 
   constructor(private httpClient:HttpClient) { }
 
   getAllCats():Observable<Cat[]>{
-    const url='/assets/data.json';
-    return this.httpClient.get<Cat[]>(url);
+    return this.httpClient.get<Cat[]>(this.url);
   }
+  // getCat(id:number):Observable<Cat>{
+  //   this.httpClient.get<Cat[]>(this.url);
+  // }
 
 
 }
