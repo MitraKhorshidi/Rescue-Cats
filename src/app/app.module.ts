@@ -16,8 +16,8 @@ import { BreedCardComponent } from './breed-card/breed-card.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CatDialogComponent } from './cat-dialog/cat-dialog.component';
-import { MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 import { AdoptComponent } from './adopt/adopt.component';
 import { HomeAdoptionComponent } from './home-adoption/home-adoption.component';
 import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
@@ -48,7 +48,7 @@ import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
     MatDialogModule, MatButtonModule,
   ],
   providers: [
-    
+
   ],
   bootstrap: [AppComponent]
 })

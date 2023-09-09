@@ -1,1 +1,14 @@
-<p>home-breeds works!</p>
+<div>
+  <h2 class="font-semibold text-2xl ml-10">
+    Do you want to know more about cats breeds to find a good match to your
+    home?
+  </h2>
+  <div
+    class="m-10 xl:m-20 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+  >
+    <app-breed-card
+      *ngFor="let breed of breedsList"
+      [breed]="breed"
+    ></app-breed-card>
+  </div>
+</div>

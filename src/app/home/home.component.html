@@ -1,3 +1,14 @@
-<app-cats></app-cats>
-<app-breeds></app-breeds>
+<div 
+    [style.backgroundImage]="'linear-gradient(to bottom,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)),url('+heroImg+')'" 
+    class="w-full h-screen bg-cover bg-center z-0 flex flex-col justify-center items-center gap-y-8 text-white text-center"
+    >
+    <h1 class=" font-semibold text-white text-5xl p-5 tracking-widest ">Finding forever Homes for Cats</h1>
+    <p class="text-lg -mt-5 p-5"><strong>We Rescue Cats</strong> is a no-kill shelter that rescues and cares for homeless pets.</p>
+    <div class="flex gap-5 justify-center">
+        <button (click)="goCats()" class="bg-main hover:bg-[#E28775] focus:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md">Find my Cat</button>
+        <button (click)="goDonates()" class="bg-main hover:bg-[#E28775] focus:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md">Donate</button>
+    </div>
+</div>
+<app-home-adoption></app-home-adoption>
+<app-home-breeds></app-home-breeds>
 <app-footer></app-footer>
