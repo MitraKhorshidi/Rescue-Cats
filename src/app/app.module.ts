@@ -19,6 +19,8 @@ import { CatDialogComponent } from './cat-dialog/cat-dialog.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { AdoptComponent } from './adopt/adopt.component';
+import { HomeAdoptionComponent } from './home-adoption/home-adoption.component';
+import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { AdoptComponent } from './adopt/adopt.component';
     HomeComponent,
     CatDialogComponent,
     AdoptComponent,
+    HomeAdoptionComponent,
+    HomeBreedsComponent,
   ],
   imports: [
     BrowserModule,
