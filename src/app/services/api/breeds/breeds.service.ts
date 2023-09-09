@@ -10,13 +10,19 @@ export class BreedsService {
 
   constructor(private httpClient : HttpClient){}
 
-  baseUrl : string = 'https://api.thecatapi.com/v1/breeds';
+  baseUrl : string = 'https://api.thecatapi.com/v1/';
 
   getAllBreeds():Observable<Breed[]>{
-    return this.httpClient.get<Breed[]>(this.baseUrl);
+    const url :string = 'breeds';
+    return this.httpClient.get<Breed[]>(this.baseUrl.concat(url));
   }
   getImage(breed:Breed):Observable<BreedImageData>{
-    return this.httpClient.get<BreedImageData>(`https://api.thecatapi.com/v1/images/${breed.reference_image_id}`);
+    const url :string = `images/${breed.reference_image_id}`
+    return this.httpClient.get<BreedImageData>(this.baseUrl.concat(url));
+  }
+  getBreed(id:string):Observable<Breed>{
+    const url : string = `breeds/${id}`
+    return this.httpClient.get<Breed>(this.baseUrl.concat(url));
   }
 
 }
