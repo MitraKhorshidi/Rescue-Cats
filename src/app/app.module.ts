@@ -21,6 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AdoptComponent } from './adopt/adopt.component';
 import { HomeAdoptionComponent } from './home-adoption/home-adoption.component';
 import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatDialogModule, MatButtonModule,
+    MatDialogModule,
+    MatButtonModule,
+    GoogleMapsModule,
   ],
   providers: [
 

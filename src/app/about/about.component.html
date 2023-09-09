@@ -1,1 +1,18 @@
 <h2 class="text-center m-10 font-semibold">About Page</h2>
+<google-map
+  height="500px"
+  width="900px"
+  [center]="center"
+  [zoom]="zoom"
+  (mapClick)="moveMap($event)"
+  (mapMousemove)="move($event)"
+>
+  <map-marker
+    *ngFor="let markerPosition of markerPositions"
+    [position]="markerPosition"
+    [options]="markerOptions"
+    [clickable]="true"
+    (mapClick)="markerClick(markerPosition)"
+  ></map-marker>
+
+</google-map>
