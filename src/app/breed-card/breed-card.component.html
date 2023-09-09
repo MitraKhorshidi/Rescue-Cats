@@ -1,7 +1,7 @@
-<div (click)="onClick()" class="aspect-[1/1.5] w-72 rounded-md shadow-md">
+<div (click)="onClick()" class="w-full rounded-md shadow-md">
   <img
     [src]="imageUrl"
-    class="w-full aspect-[1/1] h-72 object-cover grayscale-[40%] rounded-tl-md rounded-tr-md shadow-xl"
+    class="w-full aspect-[1/1] object-cover grayscale-[40%] rounded-tl-md rounded-tr-md shadow-xl"
   />
   <div class="p-5">
     <h3 class="text-2xl tracking-wide font-semibold">
@@ -9,6 +9,11 @@
     </h3>
     <p>child friendly {{ breed.child_friendly }}</p>
     <p>dog friendly {{ breed.dog_friendly }}</p>
-    <button (click)="onClick()" class="bg-main px-2 py-1 rounded-md shadow-md">Read More</button>
   </div>
+  <button
+    (click)="onClick()"
+    class="bg-main w-full py-3 rounded-t-none rounded-b-md shadow-md"
+  >
+    Read More
+  </button>
 </div>
