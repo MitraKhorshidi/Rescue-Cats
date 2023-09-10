@@ -2,7 +2,7 @@ export interface Cat {
     id: string,
     name: string,
     breed: string,
-    breedId :string,
+    breedId: string,
     age: string,
     gender: string,
     img: string,
@@ -32,4 +32,12 @@ export interface Breed {
 
 export interface BreedImageData {
     url: string,
+}
+
+export interface AdoptApplication {
+    firstName: string,
+    lastName: string,
+    phoneNumber: number,
+    email: string,
+    address: string,
 }

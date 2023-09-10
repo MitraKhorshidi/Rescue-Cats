@@ -1,1 +1,59 @@
-<p>adopt works!</p>
+<div class="flex flex-col lg:flex-row justify-center gap-5 md:m-10 text-xl">
+
+  <div class="flex flex-col gap-3 w-full lg:w-1/2 rounded-md shadow-md ">
+    <div
+      [style.backgroundImage]="
+        'linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url(' +
+        cat.img +
+        ')'
+      "
+      class="relative aspect-[1/1] bg-cover bg-center rounded-t-md shadow-xl"
+    >
+      <h3
+        class="absolute bottom-5 left-5 text-2xl tracking-wide text-white font-semibold"
+      >
+        {{ cat.name }}
+      </h3>
+    </div>
+    <div class="flex flex-row justify-around gap-3 p-3">
+      <div class="flex flex-row gap-1 items-center">
+        <img src="/assets/icons/gender.svg" class="w-8" />
+        <p class="text-xl">{{ cat.gender }}</p>
+      </div>
+      <div class="flex flex-row gap-1 items-center">
+        <img src="/assets/icons/breed.svg" class="w-8" />
+        <p class="text-xl">{{ cat.breed }}</p>
+      </div>
+      <div class="flex flex-row gap-1 items-center">
+        <img src="/assets/icons/age.svg" class="w-9" />
+        <p class="text-xl">{{ cat.age }}</p>
+      </div>
+    </div>
+  </div>
+
+  <form (ngSubmit)="onSubmit()" class=" flex flex-col justify-center gap-4 px-5 rounded-md shadow-md w-full lg:w-1/2 p-8 ">
+    <h3 class="text-2xl font-medium mb-5">Fill the Application Form :</h3>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="application.firstName" 
+        class="p-2 w-full border border-1"
+    />
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="application.lastName"
+        class="p-2 w-full border border-1"
+    />
+    <label for="phoneNumber">Phone Number</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="application.phoneNumber"
+        class="p-2 w-full border border-1"
+    />
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" [(ngModel)]="application.email"
+        class="p-2 w-full border border-1"
+    />
+    <label for="address">Home Address</label>
+    <input type="text" id="address" name="address" [(ngModel)]="application.address"
+        class="p-2 w-full border border-1"
+    />
+    <input type="submit" value="Send Application" class="self-start bg-main hover:bg-[#E28775] rounded-md shadow-md px-4 py-2"/>
+  </form>
+
+</div>

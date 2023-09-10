@@ -25,6 +25,8 @@ import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MapComponent } from './map/map.component';
 import { CatDetailComponent } from './cat-detail/cat-detail.component';
+import { FormsModule } from '@angular/forms';
+import { ApplicationSentDialogComponent } from './application-sent-dialog/application-sent-dialog.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { CatDetailComponent } from './cat-detail/cat-detail.component';
     HomeAdoptionComponent,
     HomeBreedsComponent,
     MapComponent,
+    ApplicationSentDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { CatDetailComponent } from './cat-detail/cat-detail.component';
     MatDialogModule,
     MatButtonModule,
     GoogleMapsModule,
+    FormsModule,
   ],
   providers: [
 
