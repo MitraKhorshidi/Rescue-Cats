@@ -1,4 +1,4 @@
-<div >
+<div>
   <h1 mat-dialog-title>{{ cat.name }}</h1>
 
   <div mat-dialog-content>
@@ -12,17 +12,17 @@
       <p>{{ cat.gender }}</p>
     </div>
     <div class="flex flex-row gap-1 items-center">
-        <img src="/assets/icons/breed.svg" class="w-6" />
-        <p>{{ cat.breed }}</p>
-      </div>
-      <div class="flex flex-row gap-1 items-center">
-        <img src="/assets/icons/age.svg" class="w-6" />
-        <p>{{ cat.age }}</p>
-      </div>
+      <img src="/assets/icons/breed.svg" class="w-6" />
+      <p>{{ cat.breed }}</p>
+    </div>
+    <div class="flex flex-row gap-1 items-center">
+      <img src="/assets/icons/age.svg" class="w-6" />
+      <p>{{ cat.age }}</p>
+    </div>
   </div>
   <div mat-dialog-actions>
     <button
-        (click)="onClick()"
+      (click)="onClick()"
       mat-dialog-close
       class="bg-main px-4 py-2 rounded-md shadow-sm text-xl tracking-wide font-semibold"
     >

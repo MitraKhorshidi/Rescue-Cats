@@ -10,16 +10,16 @@ import cats from 'src/assets/data';
 })
 export class CatsService {
 
-  catsList: Cat[] = [];
-
   constructor() { }
 
   getAllCats(): Observable<Cat[]> {
     return new Observable(observer => observer.next(cats));
   }
 
-  getCat(id: number): Observable<Cat> {
-    const cat = this.catsList.find((cat) => cat.id == id);
+  getCat(catId: number): Observable<Cat> {
+    console.log('service',cats);
+    const cat = cats.find(({id}) => id == catId);
+    console.log('service',cat);
     return new Observable(observer => observer.next(cat));
   }
 

@@ -7,15 +7,17 @@ import { CatsComponent } from './cats/cats.component';
 import { BreedsComponent } from './breeds/breeds.component';
 import { BreedDetailComponent } from './breed-detail/breed-detail.component';
 import { AdoptComponent } from './adopt/adopt.component';
+import { CatDetailComponent } from './cat-detail/cat-detail.component';
 
 const routes: Routes = [
   {path:'' , component:HomeComponent},
   {path:'about' , component:AboutComponent},
   {path:'donate' , component:DonateComponent},
   {path:'cats' , component:CatsComponent},
+  {path:'cats/:catId' , component:CatDetailComponent},
   {path:'breeds' , component:BreedsComponent},
   {path:'breeds/:breedId' , component:BreedDetailComponent},
-  {path:'adopt' , component:AdoptComponent},
+  {path:'adopt/:catId' , component:AdoptComponent},
 ];
 
 @NgModule({

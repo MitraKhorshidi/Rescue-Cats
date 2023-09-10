@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Cat } from 'src/utils/models';
 import { MatDialog } from '@angular/material/dialog';
 import { CatDialogComponent } from '../cat-dialog/cat-dialog.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cat-card',
@@ -11,12 +12,10 @@ import { CatDialogComponent } from '../cat-dialog/cat-dialog.component';
 export class CatCardComponent {
   @Input() cat: Cat = {} as any;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(private router:Router) { }
 
-  openDialog() {
-    this.dialog.open(CatDialogComponent, {
-      data: { cat: this.cat }
-    });
+  onClick(){
+    this.router.navigate(["cats",this.cat.id]);
   }
 
 }
