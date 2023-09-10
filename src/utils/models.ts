@@ -1,7 +1,8 @@
 export interface Cat {
-    id: number,
+    id: string,
     name: string,
     breed: string,
+    breedId :string,
     age: string,
     gender: string,
     img: string,
