@@ -23,9 +23,10 @@
           </button>
         </div>
       </div>
-      <app-map [cats]="[cat]" (catSelected)="catSelected($event)" class="h-[500px]"></app-map>
-
-
-      
-      
+  <app-map
+    [cats]="[cat]"
+    [center]="cat.location"
+    (catSelected)="catSelected($event)"
+    class="h-[500px]"
+  ></app-map>
 </div>

@@ -13,15 +13,15 @@ export class CatDialogComponent {
   public readonly cat;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: { cat: Cat },
-    private router :Router
+    private router: Router
   ) {
     this.cat = data.cat;
   }
 
-  mapClick(cat:Cat){}
+  mapClick(cat: Cat) { }
 
-  onClick(){
-    this.router.navigate(['adopt']);
+  onClick() {
+    this.router.navigate(['adopt', this.cat.id]);
   }
 
 }

@@ -8,6 +8,8 @@ import { Cat, GeoLocation } from 'src/utils/models';
 })
 export class MapComponent {
 
+  @Output() catSelected = new EventEmitter<Cat>()
+ 
   @Input() cats: Cat[] = [];
 
   @Input() center: GeoLocation = {
@@ -15,12 +17,19 @@ export class MapComponent {
     lng: 11.574377,
   };
 
+  zoom: number = 12;
 
-  @Output() catSelected  = new EventEmitter<Cat>()
-
-
-  zoom = 12;
-  markerOptions: google.maps.MarkerOptions = { draggable: false };
+  mapOptions: google.maps.MapOptions = {
+    zoomControl: true,
+    scrollwheel: false,
+    streetViewControl: false,
+    disableDoubleClickZoom: true,
+    disableDefaultUI: true,
+    clickableIcons: false,
+  };
+  markerOptions: google.maps.MarkerOptions = {
+    draggable: false,
+  };
 
   markerClick(cat: Cat) {
     this.catSelected.emit(cat);
