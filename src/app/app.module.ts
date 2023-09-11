@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CatsComponent } from './cats/cats.component';
 import { CatCardComponent } from './cat-card/cat-card.component';
-
 import { BreedsComponent } from './breeds/breeds.component';
 import { BreedDetailComponent } from './breed-detail/breed-detail.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,11 +26,12 @@ import { HomeBreedsComponent } from './home-breeds/home-breeds.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MapComponent } from './map/map.component';
 import { CatDetailComponent } from './cat-detail/cat-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApplicationSentDialogComponent } from './application-sent-dialog/application-sent-dialog.component';
 import { ImagesCarouselComponent } from './images-carousel/images-carousel.component';
 import { CarouselModule } from '@marcreichel/angular-carousel';
 import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
     ApplicationSentDialogComponent,
     ImagesCarouselComponent,
     NavbarDialogComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +67,10 @@ import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
     GoogleMapsModule,
     FormsModule,
     CarouselModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    ReactiveFormsModule,
   ],
   providers: [
 

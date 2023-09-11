@@ -41,3 +41,9 @@ export interface AdoptApplication {
     email: string,
     address: string,
 }
+
+export interface SearchParams{
+    child_friendly : number,
+    intelligence : number,
+    dog_friendly : number,
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Breed } from 'src/utils/models';
+import { Breed, SearchParams } from 'src/utils/models';
 import { BreedsService } from '../services/api/breeds/breeds.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -12,8 +12,8 @@ export class BreedsComponent implements OnInit {
 
   allBreeds: Breed[] = [];
   breedsList: Breed[] = [];
-  counter: number = 8;
   loadMore: boolean = true;
+  filteredBreeds: Breed[] = [];
 
   constructor(
     private breedsService: BreedsService,
@@ -23,17 +23,29 @@ export class BreedsComponent implements OnInit {
     this.breedsService.getAllBreeds().subscribe({
       next: (result: Breed[]) => {
         this.allBreeds = result;
-        this.breedsList = this.allBreeds.slice(0,this.counter)
+        this.filteredBreeds = result;
+        this.load();
       }
     });
   }
-  onLoadMore() {
+  
+  filterBreeds(searchParams: SearchParams) {
+    this.breedsList = [];
+    this.filteredBreeds = this.allBreeds
+      .filter((breed) => breed.child_friendly >= searchParams.child_friendly)
+      .filter((breed) => breed.intelligence >= searchParams.intelligence)
+      .filter((breed) => breed.dog_friendly >= searchParams.dog_friendly)
+    this.load();
 
-    this.counter += 8;
-    this.breedsList = [...this.breedsList, ...this.allBreeds.slice(this.counter - 8, this.counter)];
-
-    if (this.breedsList.length === this.allBreeds.length) { this.loadMore = false; }
   }
+
+  load() {
+    const counter = this.breedsList.length;
+    this.breedsList = [...this.breedsList, ...this.filteredBreeds.slice(counter , counter+8)];
+
+    this.loadMore = !(this.breedsList.length === this.filteredBreeds.length);
+  }
+
 
 
 }
