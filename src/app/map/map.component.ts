@@ -9,7 +9,7 @@ import { Cat, GeoLocation } from 'src/utils/models';
 export class MapComponent {
 
   @Output() catSelected = new EventEmitter<Cat>()
- 
+
   @Input() cats: Cat[] = [];
 
   @Input() center: GeoLocation = {
@@ -26,6 +26,62 @@ export class MapComponent {
     disableDoubleClickZoom: true,
     disableDefaultUI: true,
     clickableIcons: false,
+
+    // https://mapstyle.withgoogle.com/
+    styles: [
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.business",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      }
+    ],
   };
   markerOptions: google.maps.MarkerOptions = {
     draggable: false,
