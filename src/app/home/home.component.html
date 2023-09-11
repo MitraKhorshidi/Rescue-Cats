@@ -3,12 +3,13 @@
     class="w-full h-screen bg-cover bg-center z-0 flex flex-col justify-center items-center gap-y-8 text-white text-center"
     >
     <h1 class=" font-semibold text-white text-5xl p-5 tracking-widest ">Finding forever Homes for Cats</h1>
-    <p class="text-lg -mt-5 p-5"><strong>We Rescue Cats</strong> is a no-kill shelter that rescues and cares for homeless pets.</p>
+    <p class="text-xl -mt-5 p-5"><span class="tracking-wider text-2xl font-semibold">We Rescue Cats</span> is a no-kill shelter that rescues and cares for homeless pets.</p>
     <div class="flex gap-5 justify-center">
-        <button (click)="goCats()" class="bg-main hover:bg-[#E28775] focus:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md">Find my Cat</button>
-        <button (click)="goDonates()" class="bg-main hover:bg-[#E28775] focus:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md">Donate</button>
+        <button (click)="goCats()" class="bg-main hover:bg-[#E28775] active:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md">Find my Cat</button>
+        <button (click)="goDonates()" class="bg-main hover:bg-[#E28775] active:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md">Donate</button>
     </div>
+    <a href="#here"><img src="/assets/icons/arrow-down.svg" class="w-10"/></a>
 </div>
-<app-home-adoption></app-home-adoption>
+<app-home-adoption id="here"></app-home-adoption>
 <app-home-breeds></app-home-breeds>
 <app-footer></app-footer>
