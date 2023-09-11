@@ -29,6 +29,7 @@ import { FormsModule } from '@angular/forms';
 import { ApplicationSentDialogComponent } from './application-sent-dialog/application-sent-dialog.component';
 import { ImagesCarouselComponent } from './images-carousel/images-carousel.component';
 import { CarouselModule } from '@marcreichel/angular-carousel';
+import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { CarouselModule } from '@marcreichel/angular-carousel';
     MapComponent,
     ApplicationSentDialogComponent,
     ImagesCarouselComponent,
+    NavbarDialogComponent,
   ],
   imports: [
     BrowserModule,
