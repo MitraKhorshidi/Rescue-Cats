@@ -8,6 +8,7 @@ import { BreedsComponent } from './breeds/breeds.component';
 import { BreedDetailComponent } from './breed-detail/breed-detail.component';
 import { AdoptComponent } from './adopt/adopt.component';
 import { CatDetailComponent } from './cat-detail/cat-detail.component';
+import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
 
 const routes: Routes = [
   {path:'' , component:HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'breeds' , component:BreedsComponent},
   {path:'breeds/:breedId' , component:BreedDetailComponent},
   {path:'adopt/:catId' , component:AdoptComponent},
+
 ];
 
 @NgModule({

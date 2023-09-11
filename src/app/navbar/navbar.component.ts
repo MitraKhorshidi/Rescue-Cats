@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { NavbarDialogComponent } from '../navbar-dialog/navbar-dialog.component';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  
+  constructor(
+    public dialog: MatDialog,
+  ){}
+
+  onClick(){
+    this.dialog.open(NavbarDialogComponent);
+  }
+
 
 }
