@@ -25,7 +25,6 @@ export class CatDetailComponent implements OnInit {
     const catId: string = this.activatedRout.snapshot.params['catId'];
     this.catsService.getCat(catId).subscribe({
       next: (result: Cat) => {
-        console.log(result);
         this.cat = result;
       }
     });

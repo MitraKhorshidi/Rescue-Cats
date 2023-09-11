@@ -17,9 +17,7 @@ export class CatsService {
   
 
   getCat(catId: string): Observable<Cat> {
-    console.log('service',cats);
     const cat = cats.find(({id}) => id == catId);
-    console.log('service',cat);
     return new Observable(observer => observer.next(cat));
   }
 

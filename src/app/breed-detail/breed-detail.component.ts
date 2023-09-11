@@ -28,7 +28,6 @@ export class BreedDetailComponent implements OnInit {
         
         this.breedsService.getImages(breed).subscribe({
           next: (result) => {
-            console.log('image', result);
             this.images = result;
           }
         });

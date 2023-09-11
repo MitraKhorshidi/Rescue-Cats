@@ -20,7 +20,6 @@ export class BreedCardComponent implements OnInit {
   ngOnInit(): void {
     this.breedsService.getImage(this.breed).subscribe({
       next: (result: BreedImageData) => {
-        console.log(result);
         this.imageUrl = result.url;
       }
     });

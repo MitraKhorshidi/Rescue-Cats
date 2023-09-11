@@ -18,7 +18,6 @@ export class HomeBreedsComponent implements OnInit{
   ngOnInit(): void {
     this.breedsService.getAllBreeds().subscribe({
       next: (result: Breed[]) => {
-        console.log(result);
         this.breedsList = result.slice(0,3);
       }
     });

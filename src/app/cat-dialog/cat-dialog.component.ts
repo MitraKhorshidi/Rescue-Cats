@@ -21,7 +21,7 @@ export class CatDialogComponent {
   mapClick(cat: Cat) { }
 
   onClick() {
-    this.router.navigate(['adopt', this.cat.id]);
+    this.router.navigate(['cats', this.cat.id]);
   }
 
 }

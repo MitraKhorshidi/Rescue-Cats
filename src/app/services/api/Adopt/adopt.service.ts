@@ -10,6 +10,5 @@ export class AdoptService {
   constructor() { }
 
   post(application :AdoptApplication){
-    console.log('application form',application);
   }
 }
