@@ -26,13 +26,14 @@ export class CatDetailComponent implements OnInit {
     this.catsService.getCat(catId).subscribe({
       next: (result: Cat) => {
         this.cat = result;
-      }
-    });
 
-    const breedId: string = this.cat.breedId;
-    this.breedsService.getBreed(breedId).subscribe({
-      next: (result: Breed) => {
-        this.breed = result;
+        const breedId: string = this.cat.breedId;
+        this.breedsService.getBreed(breedId).subscribe({
+          next: (result: Breed) => {
+            this.breed = result;
+          }
+        });
+
       }
     });
 
@@ -44,6 +45,9 @@ export class CatDetailComponent implements OnInit {
   }
   catSelected(cat: Cat) { }
 
+  onBreedClick() {
+    this.router.navigate(['breeds', this.cat.breedId]);
+  }
 
 
 }

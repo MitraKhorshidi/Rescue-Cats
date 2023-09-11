@@ -15,7 +15,7 @@
           <img src="/assets/icons/gender.svg" class="w-8" />
           <p class="text-xl">{{ cat.gender }}</p>
         </div>
-        <div class="flex flex-row gap-1 items-center">
+        <div class="flex flex-row gap-1 items-center cursor-pointer" (click)="onBreedClick()">
           <img src="/assets/icons/breed.svg" class="w-8" />
           <p class="text-xl">{{ cat.breed }}</p>
         </div>
