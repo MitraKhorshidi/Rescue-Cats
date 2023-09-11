@@ -11,7 +11,11 @@ import { CatDialogComponent } from '../cat-dialog/cat-dialog.component';
 })
 export class CatsComponent implements OnInit {
 
+  allCats: Cat[] = [];
   catsList: Cat[] = [];
+  counter: number = 8;
+  loadMore: boolean = true;
+
   constructor(
     private catsService: CatsService,
     public dialog: MatDialog,
@@ -20,13 +24,20 @@ export class CatsComponent implements OnInit {
   ngOnInit(): void {
     this.catsService.getAllCats().subscribe({
       next: (result: Cat[]) => {
-        console.log(result);
-        this.catsList = result;
+        this.allCats = result;
+        this.catsList = result.slice(0, this.counter);
       }
     });
   }
 
-  
+  onLoadMore() {
+
+    this.counter += 8;
+    this.catsList = [...this.catsList, ...this.allCats.slice(this.counter - 8, this.counter)];
+
+    if (this.catsList.length === this.allCats.length) { this.loadMore = false; }
+  }
+
   catSelected(cat: Cat) {
     this.dialog.open(CatDialogComponent, {
       data: { cat: cat }

@@ -14,6 +14,7 @@ export class CatsService {
   getAllCats(): Observable<Cat[]> {
     return new Observable(observer => observer.next(cats));
   }
+  
 
   getCat(catId: string): Observable<Cat> {
     console.log('service',cats);
