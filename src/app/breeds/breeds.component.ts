@@ -10,27 +10,30 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BreedsComponent implements OnInit {
 
-  // pageNum :any ;
-
+  allBreeds: Breed[] = [];
   breedsList: Breed[] = [];
+  counter: number = 8;
+  loadMore: boolean = true;
 
   constructor(
     private breedsService: BreedsService,
-    // private activatedRoute :ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
     this.breedsService.getAllBreeds().subscribe({
       next: (result: Breed[]) => {
-        // console.log(result);
-        this.breedsList = result;
+        this.allBreeds = result;
+        this.breedsList = this.allBreeds.slice(0,this.counter)
       }
     });
-
-    // console.log('queryparam',this.activatedRout.snapshot.queryParamMap.get('pageNum') );
-    // this.activatedRoute.queryParamMap.subscribe((params) => {
-    //   this.pageNum = params.get('pageNum') ;
-    //   console.log('Query params ', this.pageNum);
-    // });
   }
+  onLoadMore() {
+
+    this.counter += 8;
+    this.breedsList = [...this.breedsList, ...this.allBreeds.slice(this.counter - 8, this.counter)];
+
+    if (this.breedsList.length === this.allBreeds.length) { this.loadMore = false; }
+  }
+
+
 }
