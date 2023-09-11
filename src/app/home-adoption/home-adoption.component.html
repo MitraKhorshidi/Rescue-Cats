@@ -7,9 +7,9 @@
         Looking to bring a cat home?
       </h2>
       <img src="assets/cat.gif" class="w-[300px] -mt-44" />
-      <button class="bg-main px-4 py-2 rounded-md shadow-md text-white">
+      <a routerLink="/cats" class="bg-main px-4 py-2 rounded-md shadow-md text-center text-white">
         Find a Cat
-      </button>
+      </a>
     </div>
     <app-cat-card *ngFor="let cat of catsList" [cat]="cat"></app-cat-card>
   </div>

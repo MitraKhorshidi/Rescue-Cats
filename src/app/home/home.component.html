@@ -14,18 +14,18 @@
     a no-kill shelter that rescues and cares for homeless pets.
   </p>
   <div class="flex gap-5 justify-center">
-    <button
-      (click)="goCats()"
+    <a
+      routerLink="/cats"
       class="bg-main hover:bg-[#E28775] active:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md"
     >
       Find my Cat
-    </button>
-    <button
-      (click)="goDonates()"
+    </a>
+    <a
+      routerLink="/donate"
       class="bg-main hover:bg-[#E28775] active:bg-[#E28775] px-4 py-2 text-2xl font-medium shadow-md rounded-md"
     >
       Donate
-    </button>
+  </a>
   </div>
   <a href="#here" class="absolute bottom-24 animate-bounce  "><img src="/assets/icons/arrow-down.svg" class="w-10" /></a>
 </div>
