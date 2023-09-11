@@ -1,24 +1,47 @@
-<div class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:mt-20 ">
-  <!-- <img [src]="imageUrl" class="w-96" /> -->
-  <app-images-carousel [images]="images" class="w-full lg:w-1/2"></app-images-carousel>
-  <div class="w-full lg:w-1/2">
-    <h2>{{ breed.name }}</h2>
-    <div>
-      <p>origin {{ breed.origin }}</p>
-      <p>Life Span {{ breed.life_span }}</p>
+<div
+  class="flex flex-col gap-3 justify-center items-center lg:mt-20 my-10"
+>
+  <div class="flex flex-col gap-5 lg:flex-row  justify-center items-center lg:mt-20 my-10">
+    <app-images-carousel
+      [images]="images"
+      class="w-full lg:w-1/2"
+    ></app-images-carousel>
+    <div class="flex gap-5 justify-center mt-5">
+      <div class="flex flex-col justify-center gap-4">
+        <p class="text-xl">Child Friendly</p>
+        <p class="text-xl">Dog Friendly</p>
+        <p class="text-xl">Adaptability</p>
+        <p class="text-xl">Energy Level</p>
+        <p class="text-xl">Health Issues</p>
+        <p class="text-xl">Intelligence</p>
+      </div>
+      <div class="flex flex-col justify-center gap-5">
+        <p><progress [value]="breed.child_friendly" max="5"></progress></p>
+        <p><progress [value]="breed.dog_friendly" max="5"></progress></p>
+        <p><progress [value]="breed.adaptability" max="5"></progress></p>
+        <p><progress [value]="breed.energy_level" max="5"></progress></p>
+        <p><progress [value]="breed.health_issues" max="5"></progress></p>
+        <p><progress [value]="breed.intelligence" max="5"></progress></p>
+      </div>
     </div>
-    <div>
-      <p>Child Friendly {{ breed.child_friendly }}</p>
-      <p>Dog Friendly {{ breed.dog_friendly }}</p>
-    </div>
-    <div>
-      <p>Adaptability {{ breed.adaptability }}</p>
-      <p>Energy Level {{ breed.energy_level }}</p>
-    </div>
-    <div>
-      <p>Health Issues {{ breed.health_issues }}</p>
-      <p>Intelligence {{ breed.intelligence }}</p>
+  </div>
+  <div class="flex flex-col gap-4 w-full lg:w-1/2 text-xl text-justify px-10 pb-4">
+    <h2 class="text-2xl font-semibold">{{ breed.name }}</h2>
+    <div class="flex gap-5 items-center">
+      <div class="flex gap-1">
+        <img
+          src="/assets/icons/map.svg"
+          alt="origin country"
+          class="w-6"
+        /><span>{{ breed.origin }}</span>
+      </div>
+      <div class="flex gap-1">
+        <img src="/assets/icons/life.svg" alt="life span" class="w-6" /><span
+          >{{ breed.life_span }} years</span
+        >
+      </div>
     </div>
     <p>{{ breed.description }}</p>
   </div>
 </div>
+
