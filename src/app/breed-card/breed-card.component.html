@@ -1,12 +1,14 @@
 <div (click)="onClick()" class="w-full rounded-md shadow-md">
   <img
     [src]="imageUrl"
+    [alt]="breed.name"
+    loading="lazy"
     class="w-full aspect-[1/1] object-cover grayscale-[40%] rounded-tl-md rounded-tr-md shadow-xl"
   />
   <button
     (click)="onClick()"
-    class="bg-main w-full flex justify-around py-3 rounded-t-none rounded-b-md shadow-md text-xl"
+    class="w-full py-3 px-8 rounded-t-none rounded-b-md shadow-md text-xl text-start"
   >
-    <p>{{breed.name}}</p><p>>></p>
+    {{breed.name}}
   </button>
 </div>
