@@ -15,6 +15,7 @@ specifiers:
   '@angular/platform-browser': ^16.2.0
   '@angular/platform-browser-dynamic': ^16.2.0
   '@angular/router': ^16.2.0
+  '@marcreichel/angular-carousel': ^3.0.1
   '@types/jasmine': ~4.3.0
   autoprefixer: ^10.4.15
   jasmine-core: ~4.6.0
@@ -35,16 +36,17 @@ dependencies:
   '@angular/cdk': 16.2.3_rki6yb3enpitrlzqpzclxozn5y
   '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
   '@angular/compiler': 16.2.4_@angular+core@16.2.4
-  '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+  '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
   '@angular/forms': 16.2.4_jufwe7ohokiunoye63nbkzb3wi
   '@angular/google-maps': 16.2.3_rki6yb3enpitrlzqpzclxozn5y
   '@angular/material': 16.2.3_sqn53mz73ui4hx3vueg3abxlk4
   '@angular/platform-browser': 16.2.4_q52mno2a52twhgxdkefq5dt4bu
   '@angular/platform-browser-dynamic': 16.2.4_ytqk4cdexbaufxwnxdlfgwtxsu
   '@angular/router': 16.2.4_jufwe7ohokiunoye63nbkzb3wi
+  '@marcreichel/angular-carousel': 3.0.1_dhlhqfmhax24qhr45hch3c2xbe
   rxjs: 7.8.1
   tslib: 2.6.2
-  zone.js: 0.13.1
+  zone.js: 0.13.2
 
 devDependencies:
   '@angular-devkit/build-angular': 16.2.1_zrsky5fkdyfqhc4ywwqlfusjzi
@@ -290,7 +292,7 @@ packages:
     peerDependencies:
       '@angular/core': 16.2.4
     dependencies:
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       tslib: 2.6.2
     dev: false
 
@@ -302,7 +304,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       rxjs: 7.8.1
       tslib: 2.6.2
     optionalDependencies:
@@ -345,7 +347,7 @@ packages:
       '@angular/core': 16.2.4
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       rxjs: 7.8.1
       tslib: 2.6.2
     dev: false
@@ -381,10 +383,10 @@ packages:
       '@angular/core':
         optional: true
     dependencies:
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       tslib: 2.6.2
 
-  /@angular/core/16.2.4_rxjs@7.8.1+zone.js@0.13.1:
+  /@angular/core/16.2.4_rxjs@7.8.1+zone.js@0.13.2:
     resolution: {integrity: sha512-8A1WGGvsKbwSEKoa1y6yBHgOBgv/4hCMo01HJv6BR9ApBjsjpBjXG3ltfRq293j9NF8tSu6gQMs7jrc2uVXZCg==}
     engines: {node: ^16.14.0 || >=18.10.0}
     peerDependencies:
@@ -393,7 +395,7 @@ packages:
     dependencies:
       rxjs: 7.8.1
       tslib: 2.6.2
-      zone.js: 0.13.1
+      zone.js: 0.13.2
 
   /@angular/forms/16.2.4_jufwe7ohokiunoye63nbkzb3wi:
     resolution: {integrity: sha512-rf8KcgV1C4UVnpiyzTKihHdvDTv2tYH6k2406+HXL3ebP6bpIWsUsfxn08k+7gGELcLm7laFUdQBAwk3Ti5g3Q==}
@@ -405,7 +407,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       '@angular/platform-browser': 16.2.4_q52mno2a52twhgxdkefq5dt4bu
       rxjs: 7.8.1
       tslib: 2.6.2
@@ -419,7 +421,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       '@types/google.maps': 3.54.0
       rxjs: 7.8.1
       tslib: 2.6.2
@@ -439,7 +441,7 @@ packages:
       '@angular/animations': 16.2.4_@angular+core@16.2.4
       '@angular/cdk': 16.2.3_rki6yb3enpitrlzqpzclxozn5y
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       '@angular/forms': 16.2.4_jufwe7ohokiunoye63nbkzb3wi
       '@angular/platform-browser': 16.2.4_q52mno2a52twhgxdkefq5dt4bu
       '@material/animation': 15.0.0-canary.bc9ae6c9c.0
@@ -504,7 +506,7 @@ packages:
     dependencies:
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
       '@angular/compiler': 16.2.4_@angular+core@16.2.4
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       '@angular/platform-browser': 16.2.4_q52mno2a52twhgxdkefq5dt4bu
       tslib: 2.6.2
     dev: false
@@ -522,7 +524,7 @@ packages:
     dependencies:
       '@angular/animations': 16.2.4_@angular+core@16.2.4
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       tslib: 2.6.2
     dev: false
 
@@ -536,7 +538,7 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
-      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.1
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
       '@angular/platform-browser': 16.2.4_q52mno2a52twhgxdkefq5dt4bu
       rxjs: 7.8.1
       tslib: 2.6.2
@@ -2115,6 +2117,17 @@ packages:
     resolution: {integrity: sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==}
     dev: true
 
+  /@marcreichel/angular-carousel/3.0.1_dhlhqfmhax24qhr45hch3c2xbe:
+    resolution: {integrity: sha512-xsgfUQRt1gqR8gIKwNh+y8oln+XoXNWxfa0DibSOyVW9D+c00Vhhl1F4v7WY9GenNwD7cEuJ2v5Y8W1GvPFY6g==}
+    peerDependencies:
+      '@angular/common': ^16.1.7
+      '@angular/core': ^16.1.7
+    dependencies:
+      '@angular/common': 16.2.4_dutgnaqf5ugekiakmssmoghwou
+      '@angular/core': 16.2.4_rxjs@7.8.1+zone.js@0.13.2
+      tslib: 2.6.2
+    dev: false
+
   /@material/animation/15.0.0-canary.bc9ae6c9c.0:
     resolution: {integrity: sha512-leRf+BcZTfC/iSigLXnYgcHAGvFVQveoJT5+2PIRdyPI/bIG7hhciRgacHRsCKC0sGya81dDblLgdkjSUemYLw==}
     dependencies:
@@ -3665,7 +3678,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001532
-      electron-to-chromium: 1.4.513
+      electron-to-chromium: 1.4.514
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11_browserslist@4.21.10
     dev: true
@@ -4280,8 +4293,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium/1.4.513:
-    resolution: {integrity: sha512-cOB0xcInjm+E5qIssHeXJ29BaUyWpMyFKT5RB3bsLENDheCja0wMkHJyiPl0NBE/VzDI7JDuNEQWhe6RitEUcw==}
+  /electron-to-chromium/1.4.514:
+    resolution: {integrity: sha512-M8LVncPt1Xaw1XLxws6EoJCmY41RXLk87tq6PHvSHDyTYWla3CrEgGlbhC79e8LHyvQ2JTDXx//xzgSixNYcUQ==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -4375,8 +4388,8 @@ packages:
       is-arrayish: 0.2.1
     dev: true
 
-  /es-module-lexer/1.3.0:
-    resolution: {integrity: sha512-vZK7T0N2CBmBOixhmjdqx2gWVbFZ4DXZ/NyRMZVlJXPa7CyFS+/a4QQsDGDQy9ZfEzxFuNEsMLeQJnKP2p5/JA==}
+  /es-module-lexer/1.3.1:
+    resolution: {integrity: sha512-JUFAyicQV9mXc3YRxPnDlrfBKpqt6hUYzz9/boprUJHs4e4KVr3XwOF70doO6gwXUor6EWZJAyWAfKki84t20Q==}
     dev: true
 
   /esbuild-wasm/0.18.17:
@@ -5567,7 +5580,7 @@ packages:
       socket.io: 4.7.2
       source-map: 0.6.1
       tmp: 0.2.1
-      ua-parser-js: 0.7.35
+      ua-parser-js: 0.7.36
       yargs: 16.2.0
     transitivePeerDependencies:
       - bufferutil
@@ -6920,8 +6933,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/3.29.0:
-    resolution: {integrity: sha512-nszM8DINnx1vSS+TpbWKMkxem0CDWk3cSit/WWCBVs9/JZ1I/XLwOsiUglYuYReaeWWSsW9kge5zE5NZtf/a4w==}
+  /rollup/3.29.1:
+    resolution: {integrity: sha512-c+ebvQz0VIH4KhhCpDsI+Bik0eT8ZFEVZEYw0cGMVqIP8zc+gnwl7iXCamTw7vzv2MeuZFZfdx5JJIq+ehzDlg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -7676,8 +7689,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ua-parser-js/0.7.35:
-    resolution: {integrity: sha512-veRf7dawaj9xaWEu9HoTVn5Pggtc/qj+kqTOFvNiN1l0YdxwC1kvel57UCjThjGa3BHBihE8/UJAHI+uQHmd/g==}
+  /ua-parser-js/0.7.36:
+    resolution: {integrity: sha512-CPPLoCts2p7D8VbybttE3P2ylv0OBZEAy7a12DsulIEcAiMtWJy+PBgMXgWDI80D5UwqE8oQPHYnk13tm38M2Q==}
     dev: true
 
   /unicode-canonical-property-names-ecmascript/2.0.0:
@@ -7820,7 +7833,7 @@ packages:
       esbuild: 0.18.17
       less: 4.1.3
       postcss: 8.4.29
-      rollup: 3.29.0
+      rollup: 3.29.1
       sass: 1.64.1
       terser: 5.19.2
     optionalDependencies:
@@ -8005,7 +8018,7 @@ packages:
       browserslist: 4.21.10
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.15.0
-      es-module-lexer: 1.3.0
+      es-module-lexer: 1.3.1
       eslint-scope: 5.1.1
       events: 3.3.0
       glob-to-regexp: 0.4.1
@@ -8219,7 +8232,7 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /zone.js/0.13.1:
-    resolution: {integrity: sha512-+bIeDAFEBYuXRuU3qGQvzdPap+N1zjM4KkBAiiQuVVCrHrhjDuY6VkUhNa5+U27+9w0q3fbKiMCbpJ0XzMmSWA==}
+  /zone.js/0.13.2:
+    resolution: {integrity: sha512-Lyot3ocK+sixOU16CxmiBjUhkB+YYRRQuFwdJo1EDefHfEGB04it/86bjHnwg/lx4Z9YAmP8TDIalwp5qpDndw==}
     dependencies:
       tslib: 2.6.2
