@@ -28,6 +28,7 @@ import { CatDetailComponent } from './cat-detail/cat-detail.component';
 import { FormsModule } from '@angular/forms';
 import { ApplicationSentDialogComponent } from './application-sent-dialog/application-sent-dialog.component';
 import { ImagesCarouselComponent } from './images-carousel/images-carousel.component';
+import { CarouselModule } from '@marcreichel/angular-carousel';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { ImagesCarouselComponent } from './images-carousel/images-carousel.compo
     MatButtonModule,
     GoogleMapsModule,
     FormsModule,
+    CarouselModule,
   ],
   providers: [
 

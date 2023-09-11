@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BreedsService } from '../services/api/breeds/breeds.service';
 import { Breed, BreedImageData } from 'src/utils/models';
@@ -11,7 +11,7 @@ import { Breed, BreedImageData } from 'src/utils/models';
 export class BreedDetailComponent implements OnInit {
 
   breed: Breed = {} as any;
-  imageUrl: string = '';
+  images: BreedImageData[] = [];
 
   constructor(
     private activetedRout: ActivatedRoute,
@@ -26,10 +26,10 @@ export class BreedDetailComponent implements OnInit {
       next: (breed) => {
         this.breed = breed;
         
-        this.breedsService.getImage(breed).subscribe({
+        this.breedsService.getImages(breed).subscribe({
           next: (result) => {
             console.log('image', result);
-            this.imageUrl = result.url;
+            this.images = result;
           }
         });
 

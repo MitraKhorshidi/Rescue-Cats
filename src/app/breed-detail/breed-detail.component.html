@@ -1,6 +1,7 @@
-<div class="flex flex-col lg:flex col justify-center items-center gap-3">
-  <img [src]="imageUrl" class="w-96" />
-  <div>
+<div class="flex flex-col lg:flex-row justify-center items-center gap-3 lg:mt-20 ">
+  <!-- <img [src]="imageUrl" class="w-96" /> -->
+  <app-images-carousel [images]="images" class="w-full lg:w-1/2"></app-images-carousel>
+  <div class="w-full lg:w-1/2">
     <h2>{{ breed.name }}</h2>
     <div>
       <p>origin {{ breed.origin }}</p>

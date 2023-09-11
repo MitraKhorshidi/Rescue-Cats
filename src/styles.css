@@ -1,3 +1,7 @@
+@import "../node_modules/@marcreichel/angular-carousel/css/main.css";
+@import "../node_modules/@marcreichel/angular-carousel/themes/stripes.css";
+@import "../node_modules/@marcreichel/angular-carousel/themes/dots.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
