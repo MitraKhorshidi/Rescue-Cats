@@ -32,6 +32,7 @@ import { ImagesCarouselComponent } from './images-carousel/images-carousel.compo
 import { CarouselModule } from '@marcreichel/angular-carousel';
 import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ConstructionComponent } from './construction/construction.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     ImagesCarouselComponent,
     NavbarDialogComponent,
     SearchBarComponent,
+    ConstructionComponent,
   ],
   imports: [
     BrowserModule,
